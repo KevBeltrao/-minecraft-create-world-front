@@ -5,7 +5,7 @@ export const ButtonWrapper = styled.button`
   align-items: center;
   justify-content: center;
 
-  padding: 16px 64px 8px 64px;
+  padding: 8px 64px 0 64px;
   border: none;
 
   background: #757574;
@@ -17,9 +17,9 @@ export const ButtonWrapper = styled.button`
     background: #2c2d2d;
     border: 3px solid #000000;
     box-shadow: none;
-  }
 
-  margin-top: 50px;
+    cursor: default;
+  }
 
   &:active {
     background: #2c2d2d;
@@ -35,7 +35,7 @@ export const Label = styled.span`
   font-family: 'Minecraftia';
   font-style: normal;
   font-weight: 400;
-  font-size: 21px;
+  font-size: 16px;
   line-height: 32px;
   display: flex;
   align-items: center;

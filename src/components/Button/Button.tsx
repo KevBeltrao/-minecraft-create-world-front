@@ -1,16 +1,16 @@
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 import { ButtonWrapper, Label } from './styles';
 
 interface ButtonProps {
-  label: string;
-  disabled: boolean;
+  disabled?: boolean;
   onClick: () => void;
+  children: ReactNode;
 }
 
-const Button: FC<ButtonProps> = ({ label, disabled, onClick }) => {
+const Button: FC<ButtonProps> = ({ disabled = false, onClick, children }) => {
   return (
     <ButtonWrapper disabled={disabled} onClick={onClick}>
-      <Label>{label}</Label>
+      <Label>{children}</Label>
     </ButtonWrapper>
   );
 };
