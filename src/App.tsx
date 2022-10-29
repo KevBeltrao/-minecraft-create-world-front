@@ -1,12 +1,5 @@
 import { FC } from 'react';
-import Button from './components/Button';
 
-const App: FC = () => (
-  <div className="App">
-    <Button disabled onClick={() => console.log('oi')}>
-      Click me
-    </Button>
-  </div>
-);
+const App: FC = () => <div className="App"></div>;
 
 export default App;

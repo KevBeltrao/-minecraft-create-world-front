@@ -18,7 +18,7 @@ describe('Click behaviour', () => {
     render(
       <Button disabled onClick={onClick}>
         Test button
-      </Button>
+      </Button>,
     );
 
     const button = screen.getByText('Test button');
